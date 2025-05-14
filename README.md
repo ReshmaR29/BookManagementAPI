@@ -26,6 +26,6 @@ A simple Book Management REST API built using Node.js and TypeScript. Supports C
 - How to Use:
 1. Open Postman
 2. Click "Import"
-3. Choose the file BooksManagementAPI.postman_collection.json
+3. Choose the file -> Books Management APIs.postman_collection.json
 4. You’ll see all pre-configured requests (GET, POST, PUT, DELETE, CSV Import) ready to test.
 
