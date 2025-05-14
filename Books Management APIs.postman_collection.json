@@ -1,0 +1,177 @@
+{
+	"info": {
+		"_postman_id": "49074686-0021-4628-b47f-642442fdd66e",
+		"name": "Books Management APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44645373",
+		"_collection_link": "https://reshma-2481990.postman.co/workspace/Reshma's-Workspace~88b8e3be-3f10-491d-85b6-143fd4af0d77/collection/44645373-49074686-0021-4628-b47f-642442fdd66e?action=share&source=collection_link&creator=44645373"
+	},
+	"item": [
+		{
+			"name": "Update a Book",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Updated Book Title\",\r\n    \"author\": \"reshma\",\r\n    \"publishedYear\": 2003\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/books/f7db958a-a8f9-43b7-9fef-93cbe91ae2ab",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"books",
+						"f7db958a-a8f9-43b7-9fef-93cbe91ae2ab"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add New Book",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\" : \"Harry Potter\",\r\n    \"author\": \"J.K Rowling\",\r\n    \"publishedYear\": 2018\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/books/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"books",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Books from a file",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/reshm/OneDrive/Documents/books_data3.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/books/import",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"books",
+						"import"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/books/2b6fa336-0ea5-4862-905d-a291d147efe5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"books",
+						"2b6fa336-0ea5-4862-905d-a291d147efe5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a particular book",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/books/f7db958a-a8f9-43b7-9fef-93cbe91ae2ab",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"books",
+						"f7db958a-a8f9-43b7-9fef-93cbe91ae2ab"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a Book",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/books/2b6fa336-0ea5-4862-905d-a291d147efe5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"books",
+						"2b6fa336-0ea5-4862-905d-a291d147efe5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
